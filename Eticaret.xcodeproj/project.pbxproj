@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A5749951FA1BBDD00A968AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5749941FA1BBDD00A968AA /* AppDelegate.swift */; };
+		9A5749971FA1BBDD00A968AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5749961FA1BBDD00A968AA /* ViewController.swift */; };
+		9A57499A1FA1BBDD00A968AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A5749981FA1BBDD00A968AA /* Main.storyboard */; };
+		9A57499C1FA1BBDD00A968AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A57499B1FA1BBDD00A968AA /* Assets.xcassets */; };
+		9A57499F1FA1BBDD00A968AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A57499D1FA1BBDD00A968AA /* LaunchScreen.storyboard */; };
+		9A5749AA1FA1BBDD00A968AA /* EticaretTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5749A91FA1BBDD00A968AA /* EticaretTests.swift */; };
+		9A5749B51FA1BBDE00A968AA /* EticaretUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5749B41FA1BBDE00A968AA /* EticaretUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A5749A61FA1BBDD00A968AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A5749891FA1BBDD00A968AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A5749901FA1BBDD00A968AA;
+			remoteInfo = Eticaret;
+		};
+		9A5749B11FA1BBDE00A968AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A5749891FA1BBDD00A968AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A5749901FA1BBDD00A968AA;
+			remoteInfo = Eticaret;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9A5749911FA1BBDD00A968AA /* Eticaret.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eticaret.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A5749941FA1BBDD00A968AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9A5749961FA1BBDD00A968AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9A5749991FA1BBDD00A968AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9A57499B1FA1BBDD00A968AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A57499E1FA1BBDD00A968AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A5749A01FA1BBDD00A968AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A5749A51FA1BBDD00A968AA /* EticaretTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EticaretTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A5749A91FA1BBDD00A968AA /* EticaretTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EticaretTests.swift; sourceTree = "<group>"; };
+		9A5749AB1FA1BBDD00A968AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A5749B01FA1BBDE00A968AA /* EticaretUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EticaretUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A5749B41FA1BBDE00A968AA /* EticaretUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EticaretUITests.swift; sourceTree = "<group>"; };
+		9A5749B61FA1BBDE00A968AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A57498E1FA1BBDD00A968AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A5749A21FA1BBDD00A968AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A5749AD1FA1BBDE00A968AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A5749881FA1BBDD00A968AA = {
+			isa = PBXGroup;
+			children = (
+				9A5749931FA1BBDD00A968AA /* Eticaret */,
+				9A5749A81FA1BBDD00A968AA /* EticaretTests */,
+				9A5749B31FA1BBDE00A968AA /* EticaretUITests */,
+				9A5749921FA1BBDD00A968AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A5749921FA1BBDD00A968AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A5749911FA1BBDD00A968AA /* Eticaret.app */,
+				9A5749A51FA1BBDD00A968AA /* EticaretTests.xctest */,
+				9A5749B01FA1BBDE00A968AA /* EticaretUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A5749931FA1BBDD00A968AA /* Eticaret */ = {
+			isa = PBXGroup;
+			children = (
+				9A5749941FA1BBDD00A968AA /* AppDelegate.swift */,
+				9A5749961FA1BBDD00A968AA /* ViewController.swift */,
+				9A5749981FA1BBDD00A968AA /* Main.storyboard */,
+				9A57499B1FA1BBDD00A968AA /* Assets.xcassets */,
+				9A57499D1FA1BBDD00A968AA /* LaunchScreen.storyboard */,
+				9A5749A01FA1BBDD00A968AA /* Info.plist */,
+			);
+			path = Eticaret;
+			sourceTree = "<group>";
+		};
+		9A5749A81FA1BBDD00A968AA /* EticaretTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A5749A91FA1BBDD00A968AA /* EticaretTests.swift */,
+				9A5749AB1FA1BBDD00A968AA /* Info.plist */,
+			);
+			path = EticaretTests;
+			sourceTree = "<group>";
+		};
+		9A5749B31FA1BBDE00A968AA /* EticaretUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9A5749B41FA1BBDE00A968AA /* EticaretUITests.swift */,
+				9A5749B61FA1BBDE00A968AA /* Info.plist */,
+			);
+			path = EticaretUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A5749901FA1BBDD00A968AA /* Eticaret */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A5749B91FA1BBDE00A968AA /* Build configuration list for PBXNativeTarget "Eticaret" */;
+			buildPhases = (
+				9A57498D1FA1BBDD00A968AA /* Sources */,
+				9A57498E1FA1BBDD00A968AA /* Frameworks */,
+				9A57498F1FA1BBDD00A968AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Eticaret;
+			productName = Eticaret;
+			productReference = 9A5749911FA1BBDD00A968AA /* Eticaret.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A5749A41FA1BBDD00A968AA /* EticaretTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A5749BC1FA1BBDE00A968AA /* Build configuration list for PBXNativeTarget "EticaretTests" */;
+			buildPhases = (
+				9A5749A11FA1BBDD00A968AA /* Sources */,
+				9A5749A21FA1BBDD00A968AA /* Frameworks */,
+				9A5749A31FA1BBDD00A968AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A5749A71FA1BBDD00A968AA /* PBXTargetDependency */,
+			);
+			name = EticaretTests;
+			productName = EticaretTests;
+			productReference = 9A5749A51FA1BBDD00A968AA /* EticaretTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9A5749AF1FA1BBDE00A968AA /* EticaretUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A5749BF1FA1BBDE00A968AA /* Build configuration list for PBXNativeTarget "EticaretUITests" */;
+			buildPhases = (
+				9A5749AC1FA1BBDE00A968AA /* Sources */,
+				9A5749AD1FA1BBDE00A968AA /* Frameworks */,
+				9A5749AE1FA1BBDE00A968AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A5749B21FA1BBDE00A968AA /* PBXTargetDependency */,
+			);
+			name = EticaretUITests;
+			productName = EticaretUITests;
+			productReference = 9A5749B01FA1BBDE00A968AA /* EticaretUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A5749891FA1BBDD00A968AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = MacMini;
+				TargetAttributes = {
+					9A5749901FA1BBDD00A968AA = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					9A5749A41FA1BBDD00A968AA = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9A5749901FA1BBDD00A968AA;
+					};
+					9A5749AF1FA1BBDE00A968AA = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9A5749901FA1BBDD00A968AA;
+					};
+				};
+			};
+			buildConfigurationList = 9A57498C1FA1BBDD00A968AA /* Build configuration list for PBXProject "Eticaret" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A5749881FA1BBDD00A968AA;
+			productRefGroup = 9A5749921FA1BBDD00A968AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A5749901FA1BBDD00A968AA /* Eticaret */,
+				9A5749A41FA1BBDD00A968AA /* EticaretTests */,
+				9A5749AF1FA1BBDE00A968AA /* EticaretUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A57498F1FA1BBDD00A968AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A57499F1FA1BBDD00A968AA /* LaunchScreen.storyboard in Resources */,
+				9A57499C1FA1BBDD00A968AA /* Assets.xcassets in Resources */,
+				9A57499A1FA1BBDD00A968AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A5749A31FA1BBDD00A968AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A5749AE1FA1BBDE00A968AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A57498D1FA1BBDD00A968AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A5749971FA1BBDD00A968AA /* ViewController.swift in Sources */,
+				9A5749951FA1BBDD00A968AA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A5749A11FA1BBDD00A968AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A5749AA1FA1BBDD00A968AA /* EticaretTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A5749AC1FA1BBDE00A968AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A5749B51FA1BBDE00A968AA /* EticaretUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A5749A71FA1BBDD00A968AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A5749901FA1BBDD00A968AA /* Eticaret */;
+			targetProxy = 9A5749A61FA1BBDD00A968AA /* PBXContainerItemProxy */;
+		};
+		9A5749B21FA1BBDE00A968AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A5749901FA1BBDD00A968AA /* Eticaret */;
+			targetProxy = 9A5749B11FA1BBDE00A968AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9A5749981FA1BBDD00A968AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A5749991FA1BBDD00A968AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9A57499D1FA1BBDD00A968AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A57499E1FA1BBDD00A968AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A5749B71FA1BBDE00A968AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9A5749B81FA1BBDE00A968AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A5749BA1FA1BBDE00A968AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Eticaret/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = OrtakFikir.Eticaret;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A5749BB1FA1BBDE00A968AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Eticaret/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = OrtakFikir.Eticaret;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9A5749BD1FA1BBDE00A968AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EticaretTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = OrtakFikir.EticaretTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eticaret.app/Eticaret";
+			};
+			name = Debug;
+		};
+		9A5749BE1FA1BBDE00A968AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EticaretTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = OrtakFikir.EticaretTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eticaret.app/Eticaret";
+			};
+			name = Release;
+		};
+		9A5749C01FA1BBDE00A968AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EticaretUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = OrtakFikir.EticaretUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Eticaret;
+			};
+			name = Debug;
+		};
+		9A5749C11FA1BBDE00A968AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EticaretUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = OrtakFikir.EticaretUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Eticaret;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A57498C1FA1BBDD00A968AA /* Build configuration list for PBXProject "Eticaret" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A5749B71FA1BBDE00A968AA /* Debug */,
+				9A5749B81FA1BBDE00A968AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A5749B91FA1BBDE00A968AA /* Build configuration list for PBXNativeTarget "Eticaret" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A5749BA1FA1BBDE00A968AA /* Debug */,
+				9A5749BB1FA1BBDE00A968AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A5749BC1FA1BBDE00A968AA /* Build configuration list for PBXNativeTarget "EticaretTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A5749BD1FA1BBDE00A968AA /* Debug */,
+				9A5749BE1FA1BBDE00A968AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A5749BF1FA1BBDE00A968AA /* Build configuration list for PBXNativeTarget "EticaretUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A5749C01FA1BBDE00A968AA /* Debug */,
+				9A5749C11FA1BBDE00A968AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A5749891FA1BBDD00A968AA /* Project object */;
+}
