@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="UrunDetayCell" reuseIdentifier="Kell" id="gTV-IL-0wX" customClass="UrunDetayCell" customModule="Eticaret" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0YP-aA-afl" customClass="BEMCheckBox">
+                        <rect key="frame" x="2" y="5" width="20" height="20"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="248" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7q-zK-7Ia">
+                        <rect key="frame" x="27" y="5" width="50" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="0YP-aA-afl" firstAttribute="top" secondItem="a7q-zK-7Ia" secondAttribute="top" id="0Jj-jE-M7Z"/>
+                <constraint firstItem="a7q-zK-7Ia" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="4r6-uH-iDr"/>
+                <constraint firstItem="a7q-zK-7Ia" firstAttribute="leading" secondItem="0YP-aA-afl" secondAttribute="trailing" constant="5" id="6Se-9p-yev"/>
+                <constraint firstAttribute="bottom" secondItem="a7q-zK-7Ia" secondAttribute="bottom" constant="5" id="NUi-Bh-att"/>
+                <constraint firstItem="0YP-aA-afl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="Rgg-mt-r7b"/>
+                <constraint firstAttribute="trailing" secondItem="a7q-zK-7Ia" secondAttribute="trailing" constant="3" id="jPp-35-KpG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="80" height="50"/>
+            <connections>
+                <outlet property="urunlerCheckbox" destination="0YP-aA-afl" id="IEE-o3-mOZ"/>
+                <outlet property="urunlerLabel" destination="a7q-zK-7Ia" id="vkz-GB-wbi"/>
+            </connections>
+            <point key="canvasLocation" x="216" y="38"/>
+        </collectionViewCell>
+    </objects>
+</document>

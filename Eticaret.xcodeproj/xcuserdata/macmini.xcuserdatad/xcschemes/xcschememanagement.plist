@@ -7,7 +7,25 @@
 		<key>Eticaret.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>9A5749901FA1BBDD00A968AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9A5749A41FA1BBDD00A968AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9A5749AF1FA1BBDE00A968AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

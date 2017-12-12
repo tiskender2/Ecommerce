@@ -7,13 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A9ED4DD492DD9DBD5A5ED29 /* Pods_EticaretTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF49B8D3A0C4BA734018CFA /* Pods_EticaretTests.framework */; };
+		285274787B114395A6EA6CE2 /* Pods_EticaretUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56516F9504AFB3C8FA6237F4 /* Pods_EticaretUITests.framework */; };
+		5959B2EBC75D78202F29A85F /* Pods_Eticaret.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5137374D0F17443891EF63 /* Pods_Eticaret.framework */; };
+		9A44CECD1FCEDB6E00779805 /* AdresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A44CECC1FCEDB6E00779805 /* AdresViewController.swift */; };
+		9A4BA5E51FD945A4003C1C30 /* KayitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4BA5E41FD945A4003C1C30 /* KayitViewController.swift */; };
 		9A5749951FA1BBDD00A968AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5749941FA1BBDD00A968AA /* AppDelegate.swift */; };
-		9A5749971FA1BBDD00A968AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5749961FA1BBDD00A968AA /* ViewController.swift */; };
 		9A57499A1FA1BBDD00A968AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A5749981FA1BBDD00A968AA /* Main.storyboard */; };
 		9A57499C1FA1BBDD00A968AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A57499B1FA1BBDD00A968AA /* Assets.xcassets */; };
 		9A57499F1FA1BBDD00A968AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A57499D1FA1BBDD00A968AA /* LaunchScreen.storyboard */; };
 		9A5749AA1FA1BBDD00A968AA /* EticaretTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5749A91FA1BBDD00A968AA /* EticaretTests.swift */; };
 		9A5749B51FA1BBDE00A968AA /* EticaretUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5749B41FA1BBDE00A968AA /* EticaretUITests.swift */; };
+		9A5749C81FA1BD0500A968AA /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5749C71FA1BD0500A968AA /* SWRevealViewController.m */; };
+		9A5749CA1FA1C01600A968AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5749C91FA1C01600A968AA /* ViewController.swift */; };
+		9A5749CC1FA1CEA800A968AA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5749CB1FA1CEA800A968AA /* MenuViewController.swift */; };
+		9A57D2E21FA8660700662D4A /* UrunDetayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A57D2E11FA8660700662D4A /* UrunDetayViewController.swift */; };
+		9A57D2E41FA86BDC00662D4A /* UrunDetayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A57D2E31FA86BDC00662D4A /* UrunDetayCollectionViewCell.swift */; };
+		9A5C52271FA9F2EC0053674F /* BEMAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5C52201FA9F2EC0053674F /* BEMAnimationManager.m */; };
+		9A5C52281FA9F2ED0053674F /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5C52231FA9F2EC0053674F /* BEMCheckBox.m */; };
+		9A5C52291FA9F2ED0053674F /* BEMCheckBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5C52241FA9F2EC0053674F /* BEMCheckBoxGroup.m */; };
+		9A5C522A1FA9F2ED0053674F /* BEMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5C52251FA9F2EC0053674F /* BEMPathManager.m */; };
+		9A66D9AE1FA30FD80054CD57 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66D9AD1FA30FD80054CD57 /* MenuTableViewCell.swift */; };
+		9A6FB3951FC802C8007E611A /* SepetimTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6FB3941FC802C8007E611A /* SepetimTableViewCell.swift */; };
+		9A6FB3971FC802E0007E611A /* SepetimCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6FB3961FC802E0007E611A /* SepetimCollectionViewCell.swift */; };
+		9A721E641FDAD1A500CE3928 /* DetayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A721E631FDAD1A400CE3928 /* DetayViewController.swift */; };
+		9A7E00481FD6D18B00DC132B /* OdemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7E00471FD6D18B00DC132B /* OdemeViewController.swift */; };
+		9A7E004A1FD6D5AF00DC132B /* OdemeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7E00491FD6D5AF00DC132B /* OdemeCollectionViewCell.swift */; };
+		9A81BF251FC6F8E80078D184 /* SepetimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A81BF241FC6F8E80078D184 /* SepetimViewController.swift */; };
+		9A9C7F521FBEBE8B00D41032 /* UrunDetayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C7F501FBEBE8B00D41032 /* UrunDetayCell.swift */; };
+		9A9C7F531FBEBE8B00D41032 /* UrunDetayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A9C7F511FBEBE8B00D41032 /* UrunDetayCell.xib */; };
+		9AA69B321FD93617009EAE66 /* GirisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA69B311FD93617009EAE66 /* GirisViewController.swift */; };
+		9AE4ABAC1FA741E00020ECB6 /* ResimCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE4ABAB1FA741E00020ECB6 /* ResimCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +58,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A51FAC46273E13D27F794B5 /* Pods-EticaretTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EticaretTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EticaretTests/Pods-EticaretTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3A5137374D0F17443891EF63 /* Pods_Eticaret.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eticaret.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56516F9504AFB3C8FA6237F4 /* Pods_EticaretUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EticaretUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BF3377BD04C25C92C962E7B /* Pods-EticaretUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EticaretUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EticaretUITests/Pods-EticaretUITests.release.xcconfig"; sourceTree = "<group>"; };
+		64A9664A335FF83FBE53D2C2 /* Pods-Eticaret.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eticaret.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eticaret/Pods-Eticaret.debug.xcconfig"; sourceTree = "<group>"; };
+		76A77E5D8B609B01E0BB8683 /* Pods-EticaretTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EticaretTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EticaretTests/Pods-EticaretTests.release.xcconfig"; sourceTree = "<group>"; };
+		7C8A3373BFE3BE863D4177A1 /* Pods-EticaretUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EticaretUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EticaretUITests/Pods-EticaretUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A44CECC1FCEDB6E00779805 /* AdresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdresViewController.swift; sourceTree = "<group>"; };
+		9A4BA5E41FD945A4003C1C30 /* KayitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KayitViewController.swift; sourceTree = "<group>"; };
 		9A5749911FA1BBDD00A968AA /* Eticaret.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eticaret.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5749941FA1BBDD00A968AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9A5749961FA1BBDD00A968AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9A5749991FA1BBDD00A968AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A57499B1FA1BBDD00A968AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A57499E1FA1BBDD00A968AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +79,34 @@
 		9A5749B01FA1BBDE00A968AA /* EticaretUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EticaretUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5749B41FA1BBDE00A968AA /* EticaretUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EticaretUITests.swift; sourceTree = "<group>"; };
 		9A5749B61FA1BBDE00A968AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A5749C51FA1BD0400A968AA /* Eticaret-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Eticaret-Bridging-Header.h"; sourceTree = "<group>"; };
+		9A5749C61FA1BD0500A968AA /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		9A5749C71FA1BD0500A968AA /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		9A5749C91FA1C01600A968AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9A5749CB1FA1CEA800A968AA /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		9A57D2E11FA8660700662D4A /* UrunDetayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrunDetayViewController.swift; sourceTree = "<group>"; };
+		9A57D2E31FA86BDC00662D4A /* UrunDetayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrunDetayCollectionViewCell.swift; sourceTree = "<group>"; };
+		9A5C521F1FA9F2EC0053674F /* BEMAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAnimationManager.h; sourceTree = "<group>"; };
+		9A5C52201FA9F2EC0053674F /* BEMAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMAnimationManager.m; sourceTree = "<group>"; };
+		9A5C52211FA9F2EC0053674F /* BEMCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCheckBox.h; sourceTree = "<group>"; };
+		9A5C52221FA9F2EC0053674F /* BEMPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMPathManager.h; sourceTree = "<group>"; };
+		9A5C52231FA9F2EC0053674F /* BEMCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBox.m; sourceTree = "<group>"; };
+		9A5C52241FA9F2EC0053674F /* BEMCheckBoxGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBoxGroup.m; sourceTree = "<group>"; };
+		9A5C52251FA9F2EC0053674F /* BEMPathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMPathManager.m; sourceTree = "<group>"; };
+		9A5C52261FA9F2EC0053674F /* BEMCheckBoxGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCheckBoxGroup.h; sourceTree = "<group>"; };
+		9A66D9AD1FA30FD80054CD57 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		9A6FB3941FC802C8007E611A /* SepetimTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetimTableViewCell.swift; sourceTree = "<group>"; };
+		9A6FB3961FC802E0007E611A /* SepetimCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetimCollectionViewCell.swift; sourceTree = "<group>"; };
+		9A721E631FDAD1A400CE3928 /* DetayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetayViewController.swift; sourceTree = "<group>"; };
+		9A7E00471FD6D18B00DC132B /* OdemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdemeViewController.swift; sourceTree = "<group>"; };
+		9A7E00491FD6D5AF00DC132B /* OdemeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdemeCollectionViewCell.swift; sourceTree = "<group>"; };
+		9A81BF241FC6F8E80078D184 /* SepetimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetimViewController.swift; sourceTree = "<group>"; };
+		9A9C7F501FBEBE8B00D41032 /* UrunDetayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrunDetayCell.swift; sourceTree = "<group>"; };
+		9A9C7F511FBEBE8B00D41032 /* UrunDetayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UrunDetayCell.xib; sourceTree = "<group>"; };
+		9AA69B311FD93617009EAE66 /* GirisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirisViewController.swift; sourceTree = "<group>"; };
+		9AE4ABAB1FA741E00020ECB6 /* ResimCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResimCollectionViewCell.swift; sourceTree = "<group>"; };
+		CBF49B8D3A0C4BA734018CFA /* Pods_EticaretTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EticaretTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE37F99AC6F1E2B7E183EDC /* Pods-Eticaret.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eticaret.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eticaret/Pods-Eticaret.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5959B2EBC75D78202F29A85F /* Pods_Eticaret.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A9ED4DD492DD9DBD5A5ED29 /* Pods_EticaretTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +130,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				285274787B114395A6EA6CE2 /* Pods_EticaretUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D804754B66509D427A06F4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A5137374D0F17443891EF63 /* Pods_Eticaret.framework */,
+				CBF49B8D3A0C4BA734018CFA /* Pods_EticaretTests.framework */,
+				56516F9504AFB3C8FA6237F4 /* Pods_EticaretUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A4B1B441FACB6E400B69831 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A5C52201FA9F2EC0053674F /* BEMAnimationManager.m */,
+				9A5C52211FA9F2EC0053674F /* BEMCheckBox.h */,
+				9A5C52231FA9F2EC0053674F /* BEMCheckBox.m */,
+				9A5C52261FA9F2EC0053674F /* BEMCheckBoxGroup.h */,
+				9A5C52241FA9F2EC0053674F /* BEMCheckBoxGroup.m */,
+				9A5C52221FA9F2EC0053674F /* BEMPathManager.h */,
+				9A5C52251FA9F2EC0053674F /* BEMPathManager.m */,
+				9A5749C61FA1BD0500A968AA /* SWRevealViewController.h */,
+				9A5749C71FA1BD0500A968AA /* SWRevealViewController.m */,
+				9A5C521F1FA9F2EC0053674F /* BEMAnimationManager.h */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		9A5749881FA1BBDD00A968AA = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +171,8 @@
 				9A5749A81FA1BBDD00A968AA /* EticaretTests */,
 				9A5749B31FA1BBDE00A968AA /* EticaretUITests */,
 				9A5749921FA1BBDD00A968AA /* Products */,
+				F51FEDB99E249BB67ABEB5F5 /* Pods */,
+				8D804754B66509D427A06F4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +189,10 @@
 		9A5749931FA1BBDD00A968AA /* Eticaret */ = {
 			isa = PBXGroup;
 			children = (
-				9A5749941FA1BBDD00A968AA /* AppDelegate.swift */,
-				9A5749961FA1BBDD00A968AA /* ViewController.swift */,
-				9A5749981FA1BBDD00A968AA /* Main.storyboard */,
+				9A5749C41FA1BC1100A968AA /* Model */,
+				9A5749C21FA1BC0400A968AA /* Controller */,
+				9A5749C31FA1BC0E00A968AA /* View */,
 				9A57499B1FA1BBDD00A968AA /* Assets.xcassets */,
-				9A57499D1FA1BBDD00A968AA /* LaunchScreen.storyboard */,
 				9A5749A01FA1BBDD00A968AA /* Info.plist */,
 			);
 			path = Eticaret;
@@ -125,6 +216,63 @@
 			path = EticaretUITests;
 			sourceTree = "<group>";
 		};
+		9A5749C21FA1BC0400A968AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9A5749C91FA1C01600A968AA /* ViewController.swift */,
+				9A5749CB1FA1CEA800A968AA /* MenuViewController.swift */,
+				9A66D9AD1FA30FD80054CD57 /* MenuTableViewCell.swift */,
+				9AE4ABAB1FA741E00020ECB6 /* ResimCollectionViewCell.swift */,
+				9A57D2E11FA8660700662D4A /* UrunDetayViewController.swift */,
+				9A57D2E31FA86BDC00662D4A /* UrunDetayCollectionViewCell.swift */,
+				9A9C7F501FBEBE8B00D41032 /* UrunDetayCell.swift */,
+				9A81BF241FC6F8E80078D184 /* SepetimViewController.swift */,
+				9A6FB3941FC802C8007E611A /* SepetimTableViewCell.swift */,
+				9A6FB3961FC802E0007E611A /* SepetimCollectionViewCell.swift */,
+				9A44CECC1FCEDB6E00779805 /* AdresViewController.swift */,
+				9A7E00471FD6D18B00DC132B /* OdemeViewController.swift */,
+				9A7E00491FD6D5AF00DC132B /* OdemeCollectionViewCell.swift */,
+				9AA69B311FD93617009EAE66 /* GirisViewController.swift */,
+				9A4BA5E41FD945A4003C1C30 /* KayitViewController.swift */,
+				9A721E631FDAD1A400CE3928 /* DetayViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9A5749C31FA1BC0E00A968AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A5749981FA1BBDD00A968AA /* Main.storyboard */,
+				9A57499D1FA1BBDD00A968AA /* LaunchScreen.storyboard */,
+				9A9C7F511FBEBE8B00D41032 /* UrunDetayCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9A5749C41FA1BC1100A968AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9A4B1B441FACB6E400B69831 /* Frameworks */,
+				9A5749941FA1BBDD00A968AA /* AppDelegate.swift */,
+				9A5749C51FA1BD0400A968AA /* Eticaret-Bridging-Header.h */,
+			);
+			name = Model;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		F51FEDB99E249BB67ABEB5F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64A9664A335FF83FBE53D2C2 /* Pods-Eticaret.debug.xcconfig */,
+				FAE37F99AC6F1E2B7E183EDC /* Pods-Eticaret.release.xcconfig */,
+				1A51FAC46273E13D27F794B5 /* Pods-EticaretTests.debug.xcconfig */,
+				76A77E5D8B609B01E0BB8683 /* Pods-EticaretTests.release.xcconfig */,
+				7C8A3373BFE3BE863D4177A1 /* Pods-EticaretUITests.debug.xcconfig */,
+				5BF3377BD04C25C92C962E7B /* Pods-EticaretUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +280,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A5749B91FA1BBDE00A968AA /* Build configuration list for PBXNativeTarget "Eticaret" */;
 			buildPhases = (
+				75FE6BD12DCC6DD735BC1323 /* [CP] Check Pods Manifest.lock */,
 				9A57498D1FA1BBDD00A968AA /* Sources */,
 				9A57498E1FA1BBDD00A968AA /* Frameworks */,
 				9A57498F1FA1BBDD00A968AA /* Resources */,
+				B7F2488EDF8E9C8CD11455DC /* [CP] Embed Pods Frameworks */,
+				596F091B7B28DA59892E32D3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +300,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A5749BC1FA1BBDE00A968AA /* Build configuration list for PBXNativeTarget "EticaretTests" */;
 			buildPhases = (
+				D9C6B9108BF2EE9A9F16EB8A /* [CP] Check Pods Manifest.lock */,
 				9A5749A11FA1BBDD00A968AA /* Sources */,
 				9A5749A21FA1BBDD00A968AA /* Frameworks */,
 				9A5749A31FA1BBDD00A968AA /* Resources */,
+				54FFFFA3BC13EF27508FC4CD /* [CP] Embed Pods Frameworks */,
+				05B115B41369D430F4754407 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +321,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A5749BF1FA1BBDE00A968AA /* Build configuration list for PBXNativeTarget "EticaretUITests" */;
 			buildPhases = (
+				734FCFFBBCE540996205BD22 /* [CP] Check Pods Manifest.lock */,
 				9A5749AC1FA1BBDE00A968AA /* Sources */,
 				9A5749AD1FA1BBDE00A968AA /* Frameworks */,
 				9A5749AE1FA1BBDE00A968AA /* Resources */,
+				C64DCADB479D876F3E6E8DFD /* [CP] Embed Pods Frameworks */,
+				11C371116689DE063F460166 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +350,7 @@
 				TargetAttributes = {
 					9A5749901FA1BBDD00A968AA = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					9A5749A41FA1BBDD00A968AA = {
@@ -235,6 +393,7 @@
 				9A57499F1FA1BBDD00A968AA /* LaunchScreen.storyboard in Resources */,
 				9A57499C1FA1BBDD00A968AA /* Assets.xcassets in Resources */,
 				9A57499A1FA1BBDD00A968AA /* Main.storyboard in Resources */,
+				9A9C7F531FBEBE8B00D41032 /* UrunDetayCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +413,187 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05B115B41369D430F4754407 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EticaretTests/Pods-EticaretTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		11C371116689DE063F460166 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EticaretUITests/Pods-EticaretUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54FFFFA3BC13EF27508FC4CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EticaretTests/Pods-EticaretTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		596F091B7B28DA59892E32D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eticaret/Pods-Eticaret-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		734FCFFBBCE540996205BD22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EticaretUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75FE6BD12DCC6DD735BC1323 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Eticaret-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7F2488EDF8E9C8CD11455DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Eticaret/Pods-Eticaret-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eticaret/Pods-Eticaret-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C64DCADB479D876F3E6E8DFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EticaretUITests/Pods-EticaretUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9C6B9108BF2EE9A9F16EB8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EticaretTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9A57498D1FA1BBDD00A968AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A5749971FA1BBDD00A968AA /* ViewController.swift in Sources */,
+				9A81BF251FC6F8E80078D184 /* SepetimViewController.swift in Sources */,
+				9A5749CA1FA1C01600A968AA /* ViewController.swift in Sources */,
+				9A4BA5E51FD945A4003C1C30 /* KayitViewController.swift in Sources */,
 				9A5749951FA1BBDD00A968AA /* AppDelegate.swift in Sources */,
+				9A6FB3951FC802C8007E611A /* SepetimTableViewCell.swift in Sources */,
+				9A5C52291FA9F2ED0053674F /* BEMCheckBoxGroup.m in Sources */,
+				9A5C52271FA9F2EC0053674F /* BEMAnimationManager.m in Sources */,
+				9A57D2E21FA8660700662D4A /* UrunDetayViewController.swift in Sources */,
+				9A7E00481FD6D18B00DC132B /* OdemeViewController.swift in Sources */,
+				9A5749C81FA1BD0500A968AA /* SWRevealViewController.m in Sources */,
+				9AA69B321FD93617009EAE66 /* GirisViewController.swift in Sources */,
+				9A6FB3971FC802E0007E611A /* SepetimCollectionViewCell.swift in Sources */,
+				9A721E641FDAD1A500CE3928 /* DetayViewController.swift in Sources */,
+				9A57D2E41FA86BDC00662D4A /* UrunDetayCollectionViewCell.swift in Sources */,
+				9A44CECD1FCEDB6E00779805 /* AdresViewController.swift in Sources */,
+				9A5C522A1FA9F2ED0053674F /* BEMPathManager.m in Sources */,
+				9A5749CC1FA1CEA800A968AA /* MenuViewController.swift in Sources */,
+				9A66D9AE1FA30FD80054CD57 /* MenuTableViewCell.swift in Sources */,
+				9A7E004A1FD6D5AF00DC132B /* OdemeCollectionViewCell.swift in Sources */,
+				9AE4ABAC1FA741E00020ECB6 /* ResimCollectionViewCell.swift in Sources */,
+				9A5C52281FA9F2ED0053674F /* BEMCheckBox.m in Sources */,
+				9A9C7F521FBEBE8B00D41032 /* UrunDetayCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,13 +757,17 @@
 		};
 		9A5749BA1FA1BBDE00A968AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64A9664A335FF83FBE53D2C2 /* Pods-Eticaret.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Eticaret/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = OrtakFikir.Eticaret;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Eticaret/New Group1/Eticaret-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -438,13 +775,16 @@
 		};
 		9A5749BB1FA1BBDE00A968AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAE37F99AC6F1E2B7E183EDC /* Pods-Eticaret.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Eticaret/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = OrtakFikir.Eticaret;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Eticaret/New Group1/Eticaret-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,6 +792,7 @@
 		};
 		9A5749BD1FA1BBDE00A968AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A51FAC46273E13D27F794B5 /* Pods-EticaretTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +809,7 @@
 		};
 		9A5749BE1FA1BBDE00A968AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76A77E5D8B609B01E0BB8683 /* Pods-EticaretTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +826,7 @@
 		};
 		9A5749C01FA1BBDE00A968AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C8A3373BFE3BE863D4177A1 /* Pods-EticaretUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +842,7 @@
 		};
 		9A5749C11FA1BBDE00A968AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BF3377BD04C25C92C962E7B /* Pods-EticaretUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
