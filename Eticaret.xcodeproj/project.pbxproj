@@ -31,6 +31,12 @@
 		9A6FB3951FC802C8007E611A /* SepetimTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6FB3941FC802C8007E611A /* SepetimTableViewCell.swift */; };
 		9A6FB3971FC802E0007E611A /* SepetimCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6FB3961FC802E0007E611A /* SepetimCollectionViewCell.swift */; };
 		9A721E641FDAD1A500CE3928 /* DetayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A721E631FDAD1A400CE3928 /* DetayViewController.swift */; };
+		9A743D9C1FDFB90C005D94CF /* Webservices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A743D9B1FDFB90C005D94CF /* Webservices.swift */; };
+		9A743D9E1FDFE48C005D94CF /* AyarlarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A743D9D1FDFE48C005D94CF /* AyarlarViewController.swift */; };
+		9A743DA01FE00A1D005D94CF /* AdreslerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A743D9F1FE00A1D005D94CF /* AdreslerViewController.swift */; };
+		9A743DA21FE00ABA005D94CF /* AdreslerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A743DA11FE00ABA005D94CF /* AdreslerCollectionViewCell.swift */; };
+		9A743DA41FE01781005D94CF /* FavorilerimCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A743DA31FE01781005D94CF /* FavorilerimCollectionViewCell.swift */; };
+		9A743DA61FE0179B005D94CF /* FavorilerimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A743DA51FE0179B005D94CF /* FavorilerimViewController.swift */; };
 		9A7E00481FD6D18B00DC132B /* OdemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7E00471FD6D18B00DC132B /* OdemeViewController.swift */; };
 		9A7E004A1FD6D5AF00DC132B /* OdemeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7E00491FD6D5AF00DC132B /* OdemeCollectionViewCell.swift */; };
 		9A81BF251FC6F8E80078D184 /* SepetimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A81BF241FC6F8E80078D184 /* SepetimViewController.swift */; };
@@ -98,6 +104,12 @@
 		9A6FB3941FC802C8007E611A /* SepetimTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetimTableViewCell.swift; sourceTree = "<group>"; };
 		9A6FB3961FC802E0007E611A /* SepetimCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetimCollectionViewCell.swift; sourceTree = "<group>"; };
 		9A721E631FDAD1A400CE3928 /* DetayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetayViewController.swift; sourceTree = "<group>"; };
+		9A743D9B1FDFB90C005D94CF /* Webservices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservices.swift; sourceTree = "<group>"; };
+		9A743D9D1FDFE48C005D94CF /* AyarlarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyarlarViewController.swift; sourceTree = "<group>"; };
+		9A743D9F1FE00A1D005D94CF /* AdreslerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdreslerViewController.swift; sourceTree = "<group>"; };
+		9A743DA11FE00ABA005D94CF /* AdreslerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdreslerCollectionViewCell.swift; sourceTree = "<group>"; };
+		9A743DA31FE01781005D94CF /* FavorilerimCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorilerimCollectionViewCell.swift; sourceTree = "<group>"; };
+		9A743DA51FE0179B005D94CF /* FavorilerimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorilerimViewController.swift; sourceTree = "<group>"; };
 		9A7E00471FD6D18B00DC132B /* OdemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdemeViewController.swift; sourceTree = "<group>"; };
 		9A7E00491FD6D5AF00DC132B /* OdemeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdemeCollectionViewCell.swift; sourceTree = "<group>"; };
 		9A81BF241FC6F8E80078D184 /* SepetimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetimViewController.swift; sourceTree = "<group>"; };
@@ -235,6 +247,11 @@
 				9AA69B311FD93617009EAE66 /* GirisViewController.swift */,
 				9A4BA5E41FD945A4003C1C30 /* KayitViewController.swift */,
 				9A721E631FDAD1A400CE3928 /* DetayViewController.swift */,
+				9A743D9D1FDFE48C005D94CF /* AyarlarViewController.swift */,
+				9A743D9F1FE00A1D005D94CF /* AdreslerViewController.swift */,
+				9A743DA11FE00ABA005D94CF /* AdreslerCollectionViewCell.swift */,
+				9A743DA31FE01781005D94CF /* FavorilerimCollectionViewCell.swift */,
+				9A743DA51FE0179B005D94CF /* FavorilerimViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -255,6 +272,7 @@
 				9A4B1B441FACB6E400B69831 /* Frameworks */,
 				9A5749941FA1BBDD00A968AA /* AppDelegate.swift */,
 				9A5749C51FA1BD0400A968AA /* Eticaret-Bridging-Header.h */,
+				9A743D9B1FDFB90C005D94CF /* Webservices.swift */,
 			);
 			name = Model;
 			path = "New Group1";
@@ -572,12 +590,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A743DA01FE00A1D005D94CF /* AdreslerViewController.swift in Sources */,
 				9A81BF251FC6F8E80078D184 /* SepetimViewController.swift in Sources */,
+				9A743DA21FE00ABA005D94CF /* AdreslerCollectionViewCell.swift in Sources */,
+				9A743D9E1FDFE48C005D94CF /* AyarlarViewController.swift in Sources */,
 				9A5749CA1FA1C01600A968AA /* ViewController.swift in Sources */,
 				9A4BA5E51FD945A4003C1C30 /* KayitViewController.swift in Sources */,
 				9A5749951FA1BBDD00A968AA /* AppDelegate.swift in Sources */,
 				9A6FB3951FC802C8007E611A /* SepetimTableViewCell.swift in Sources */,
 				9A5C52291FA9F2ED0053674F /* BEMCheckBoxGroup.m in Sources */,
+				9A743DA61FE0179B005D94CF /* FavorilerimViewController.swift in Sources */,
+				9A743D9C1FDFB90C005D94CF /* Webservices.swift in Sources */,
 				9A5C52271FA9F2EC0053674F /* BEMAnimationManager.m in Sources */,
 				9A57D2E21FA8660700662D4A /* UrunDetayViewController.swift in Sources */,
 				9A7E00481FD6D18B00DC132B /* OdemeViewController.swift in Sources */,
@@ -585,6 +608,7 @@
 				9AA69B321FD93617009EAE66 /* GirisViewController.swift in Sources */,
 				9A6FB3971FC802E0007E611A /* SepetimCollectionViewCell.swift in Sources */,
 				9A721E641FDAD1A500CE3928 /* DetayViewController.swift in Sources */,
+				9A743DA41FE01781005D94CF /* FavorilerimCollectionViewCell.swift in Sources */,
 				9A57D2E41FA86BDC00662D4A /* UrunDetayCollectionViewCell.swift in Sources */,
 				9A44CECD1FCEDB6E00779805 /* AdresViewController.swift in Sources */,
 				9A5C522A1FA9F2ED0053674F /* BEMPathManager.m in Sources */,

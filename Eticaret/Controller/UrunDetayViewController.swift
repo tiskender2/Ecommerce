@@ -33,7 +33,6 @@ class UrunDetayViewController: UIViewController,UICollectionViewDelegate,UIColle
     var ozellikBaslık=[String]()
     var ozellikStok=[String]()
     var secim4_id=""
-    var uygulamadili="tr"
     var urunSayıları=""
     var maxStok:String=""
     var secilenStok:String=""
@@ -48,7 +47,11 @@ class UrunDetayViewController: UIViewController,UICollectionViewDelegate,UIColle
     var radiobutton=[Array<UIButton>]()
     var selectedIndex = IndexPath()
     var radioControl=""
-    
+    var varyantlar=[String]()
+    var varyantlar2=[String]()
+    var varyants=""
+    var varyants2=""
+    var gidenVaryantlar=""
     @IBOutlet weak var sideMenu: UIBarButtonItem!
     @IBOutlet weak var btnFav: UIButton!
     @IBOutlet weak var adetSayi: UILabel!
@@ -64,12 +67,13 @@ class UrunDetayViewController: UIViewController,UICollectionViewDelegate,UIColle
     var tur=""
     var stackViewSize = CGFloat()
     var vid = ""
+    var count = 1
     let scrollView = UIScrollView()
     override func viewDidLoad() {
         super.viewDidLoad()
         sideMenus()
         urunDetayCustomize()
-        urunDetayDatas(urlString: "https://ortakfikir.com/eticaret/sistem/API/webservices/android_services/service_app_20102017_versionv4_php/urun_detay.php",vid:vid)
+        urunDetayDatas(urlString: WebService.urun_detay ,vid:vid,dil: Dil.tr)
       /* let firstView = enDisStack.arrangedSubviews[0]
         UIView.animate(withDuration: 0.5){
             firstView.isHidden = true
@@ -82,8 +86,38 @@ class UrunDetayViewController: UIViewController,UICollectionViewDelegate,UIColle
       
     }
     @IBAction func sepeteEkle(_ sender: Any) {
-        let nesne = self.storyboard?.instantiateViewController(withIdentifier: "SepetimViewController") as! SepetimViewController
-        self.navigationController?.pushViewController(nesne, animated: true)
+        for i in varyantlar2
+        {
+            if i != ""
+            {
+                if count == 1
+                {
+                    gidenVaryantlar=i
+                    
+                }
+                if count != 1
+                {
+                    gidenVaryantlar=gidenVaryantlar+"&"+i
+                }
+                count=0
+            }
+        }
+        if adetSayi.text != "0"
+        {
+            sepeteEkle(urlString: WebService.sepete_ekle, adet: adetSayi.text! , vid: vid, anonimId: globals.anonim_id, varyants: gidenVaryantlar)
+            let nesne = self.storyboard?.instantiateViewController(withIdentifier: "SepetimViewController") as! SepetimViewController
+            self.navigationController?.pushViewController(nesne, animated: true)
+        }
+        else
+        {
+            DispatchQueue.main.async {
+                let alert = UIAlertController(title: "Uyari!", message: "Adet sayısı 0 olamaz", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Tamam", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                
+            }
+        }
+  
     }
     
     func sideMenus()
@@ -248,9 +282,10 @@ class UrunDetayViewController: UIViewController,UICollectionViewDelegate,UIColle
             cell?.layer.borderWidth = 1
             cell?.layer.borderColor = UIColor.green.cgColor
             cell?.layer.cornerRadius = 4
+            vid=vids[indexPath.row]
             selectedIndex = indexPath
             seceneklerCustomize()
-            urunDetayDatas(urlString: "https://ortakfikir.com/eticaret/sistem/API/webservices/android_services/service_app_20102017_versionv4_php/urun_detay.php",vid:vids[indexPath.row])
+            urunDetayDatas(urlString: WebService.urun_detay,vid:vids[indexPath.row], dil: Dil.tr)
         }
     }
    func urunDetayCustomize()
@@ -282,7 +317,7 @@ class UrunDetayViewController: UIViewController,UICollectionViewDelegate,UIColle
         scrollView.delegate = self
     
     }
-    func urunDetayDatas(urlString:String,vid:String)
+    func urunDetayDatas(urlString:String,vid:String,dil:String)
     {
         self.urunBilgi.removeAll()
         self.urunResimler.removeAll()
@@ -299,7 +334,7 @@ class UrunDetayViewController: UIViewController,UICollectionViewDelegate,UIColle
         let urlRequest = URL(string: urlString)
         var request = URLRequest(url: urlRequest! as URL)
         request.httpMethod = "POST"
-        let parameters = "vid="+vid+"&secilen_dil="+uygulamadili
+        let parameters = "vid="+vid+"&secilen_dil="+dil
         request.httpBody = parameters.data(using: String.Encoding.utf8)
         let task = URLSession.shared.dataTask(with: request as URLRequest) { (data, response, error) in
             
@@ -513,9 +548,10 @@ class UrunDetayViewController: UIViewController,UICollectionViewDelegate,UIColle
     func urunlers(i:Int,secimler:Array<String>,ozellik:String,tur:String,secim:String,tag:Array<String>,constra:Int,stok:Array<String>)
     {
             array.append(secimler)
+            varyantlar.append("varyant\(i+1)")
+            varyantlar2.append("")
             let frame3 = CGRect(x:0, y:i * 60, width: Int(stackView.frame.size.width), height: 30 )
             let label = UILabel(frame: frame3)
-            
             label.text=ozellik
             label.textColor = UIColor.gray
             cons += label.frame.size.height
@@ -537,6 +573,7 @@ class UrunDetayViewController: UIViewController,UICollectionViewDelegate,UIColle
                     button.setTitle(secimler[index], for: .normal)
                     button.sendActions(for: .touchUpInside)
                     button.accessibilityHint=tag[index]
+                    
                     if tur == "radio"
                     {
                         button.accessibilityLabel=stok[index]
@@ -567,6 +604,7 @@ class UrunDetayViewController: UIViewController,UICollectionViewDelegate,UIColle
                 let frame5 = CGRect(x:0, y:aralık, width: Int(stackView.frame.size.width), height: 20 )
                 let label2 = UILabel(frame: frame5)
                 label2.text = secim
+                varyantlar2[i]=varyantlar[i]+"="+secim4_id
                 label2.textColor = UIColor.gray
                 cons += label2.frame.size.height
                 scrollView.addSubview(label2)
@@ -589,19 +627,36 @@ class UrunDetayViewController: UIViewController,UICollectionViewDelegate,UIColle
         
     }
     @objc func buttonAction(sender: UIButton!) {
-       
+    
+        /*print(varyantlar)
+        print(varyantlar[sender.tag])
+        print(sender.accessibilityHint!)*/
+        
         if varyant_tur[sender.tag] == "checkbox"
         {
             if ids.range(of:sender.accessibilityHint!+",") != nil {
                 let a = sender.accessibilityHint!+","
                 ids = ids.replacingOccurrences(of: a, with: "")
                 dizi[sender.tag] = ids
+                if ids != ""
+                {
+                    varyantlar2[sender.tag]=varyantlar[sender.tag]+"="+ids
+                }
+                else
+                {
+                    varyantlar2[sender.tag]=""
+                }
+                
+                
                 
             }
             else
             {
                 ids = dizi[sender.tag]+sender.accessibilityHint!+","
                 dizi[sender.tag] = ids
+                
+                varyantlar2[sender.tag]=varyantlar[sender.tag]+"="+ids
+             
             }
             if sender.layer.borderColor==UIColor.lightGray.cgColor
             {
@@ -616,6 +671,7 @@ class UrunDetayViewController: UIViewController,UICollectionViewDelegate,UIColle
         }
         else if  varyant_tur[sender.tag] == "radio" || varyant_tur[sender.tag] == "select"
         {
+            varyantlar2[sender.tag]=varyantlar[sender.tag]+"="+sender.accessibilityHint!
             if  varyant_tur[sender.tag] == "radio"
             {
                 maxStok = sender.accessibilityLabel!
@@ -640,8 +696,36 @@ class UrunDetayViewController: UIViewController,UICollectionViewDelegate,UIColle
                 sender.backgroundColor = UIColor.white
             }
         }
-       
+      print(varyantlar2)
 
+    }
+    func sepeteEkle(urlString:String,adet:String,vid:String,anonimId:String,varyants:String)
+    {
+        let urlRequest = URL(string: urlString)
+        var request = URLRequest(url: urlRequest! as URL)
+        request.httpMethod = "POST"
+        let parameters = "adet="+adet+"&vid="+vid+"&anonimid="+anonimId+"&"+varyants
+        request.httpBody = parameters.data(using: String.Encoding.utf8)
+        let task = URLSession.shared.dataTask(with: request as URLRequest) { (data, response, error) in
+            
+            if error != nil
+            {
+                print(error!)
+            }
+            else
+            {
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? NSDictionary
+                    print(json!)
+                }
+                catch
+                {
+                    
+                }
+            }
+           
+        }
+        task.resume()
     }
     
     func seceneklerCustomize()

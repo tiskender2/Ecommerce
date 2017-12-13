@@ -55,7 +55,32 @@ class MenuViewController: UIViewController,UITableViewDataSource,UITableViewDele
        
       
     }
-
+    @IBAction func favorilerClick(_ sender: Any) {
+        let revealViewController:SWRevealViewController = self.revealViewController()
+        let mainStroyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let desController = mainStroyBoard.instantiateViewController(withIdentifier: "FavorilerimViewController") as! FavorilerimViewController
+        desController.uyeid=uyeid
+        let newFrontViewController = UINavigationController.init(rootViewController:desController)
+        revealViewController.pushFrontViewController(newFrontViewController, animated: true)
+    }
+    @IBAction func adreslerClick(_ sender: Any) {
+        let revealViewController:SWRevealViewController = self.revealViewController()
+        let mainStroyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let desController = mainStroyBoard.instantiateViewController(withIdentifier: "AdreslerViewController") as! AdreslerViewController
+        desController.uyeid=uyeid
+        let newFrontViewController = UINavigationController.init(rootViewController:desController)
+        revealViewController.pushFrontViewController(newFrontViewController, animated: true)
+    }
+    
+    @IBAction func ayarlarClick(_ sender: Any) {
+        let revealViewController:SWRevealViewController = self.revealViewController()
+        let mainStroyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let desController = mainStroyBoard.instantiateViewController(withIdentifier: "AyarlarViewController") as! AyarlarViewController
+        desController.uyeid=uyeid
+        let newFrontViewController = UINavigationController.init(rootViewController:desController)
+        revealViewController.pushFrontViewController(newFrontViewController, animated: true)
+    }
+    
     @IBAction func anaSayfa(_ sender: Any) {
         let revealViewController:SWRevealViewController = self.revealViewController()
         let mainStroyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -79,7 +104,6 @@ class MenuViewController: UIViewController,UITableViewDataSource,UITableViewDele
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("a")
         let revealViewController:SWRevealViewController = self.revealViewController()
         let mainStroyboard:UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
         let desController = mainStroyboard.instantiateViewController(withIdentifier: "DetayViewController") as! DetayViewController
@@ -214,14 +238,14 @@ class MenuViewController: UIViewController,UITableViewDataSource,UITableViewDele
         uyeOl.layer.cornerRadius = 3
         girisyapBtn.layer.borderWidth = 0.5
         girisyapBtn.layer.borderColor = UIColor.white.cgColor
-        tabloDoldur(urlString: "https://ortakfikir.com/eticaret/sistem/API/webservices/android_services/service_app_20102017_versionv4_php/sayfalari_cek.php", secilen_dil: "tr")
+        tabloDoldur(urlString: WebService.sayfaları_cek, secilen_dil: Dil.tr)
        
         if  UserDefaults.standard.object(forKey: "uyeid")  != nil
         {
             self.uyeid = UserDefaults.standard.object(forKey: "uyeid") as! Int
             let firstView = stackView.arrangedSubviews[1]
              firstView.isHidden = true
-              uyebilgi(urlString: "https://ortakfikir.com/eticaret/sistem/API/webservices/android_services/service_app_20102017_versionv4_php/uye_bilgileri.php", uyeid: "\(uyeid)")
+              uyebilgi(urlString: WebService.uye_bilgileri, uyeid: "\(uyeid)")
             
         }
         else

@@ -22,7 +22,8 @@ class SepetimTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    @IBOutlet weak var ozellikler: UITextView!
+    
     @IBOutlet weak var azaltBtn: UIButton!
     @IBOutlet weak var arttırBtn: UIButton!
     @IBOutlet weak var iptalButton: UIButton!

@@ -37,10 +37,10 @@ struct Taksit {
     }
 class SepetimViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,BEMCheckBoxDelegate{
    
+    var ozellikler:NSAttributedString = NSAttributedString()
     @IBOutlet weak var toplamLabel: UILabel!
     @IBOutlet weak var tSecenekCw: UICollectionView!
     @IBOutlet weak var indicator: UIActivityIndicatorView!
-    
     @IBOutlet weak var clickView: UIView!
     @IBOutlet weak var icStackUzunluk: NSLayoutConstraint!
     @IBOutlet weak var taksitCw: UICollectionView!
@@ -68,17 +68,20 @@ class SepetimViewController: UIViewController,UITableViewDelegate,UITableViewDat
     var heigt:CGFloat = 0.0
     var cwHeight:CGFloat = 0.0
     var radioGroup=[BEMCheckBox]()
+    var baslikCıktısı=[String]()
     var urunler = Urunler()
     var taksit = Taksit()
     var fiyatBilgileri=FiyatBilgileri()
     var taksitSayısı:Int=0
     var icstack:Float=0
     var icstack2:Float=0
+    var labelUzunluk=[CGFloat]()
+    var tut:CGFloat = 0.0
     override func viewDidLoad() {
         super.viewDidLoad()
         icstack=Float(icStackUzunluk.constant)
-        odemeSecenekler(urlString: "https://ortakfikir.com/eticaret/sistem/API/webservices/android_services/service_app_20102017_versionv4_php/odeme_turleri.php")
-        JsonDatas(urlString: "https://ortakfikir.com/eticaret/sistem/API/webservices/android_services/service_app_20102017_versionv4_php/sepet_listele.php", anonimId: "android_FIU2oGmaOAg1Ir188RIJdErb0tO9GEaLAJ5PYgp2etUDLNaHoVuKVmNrGru2nN27IFNVy8uClgoujIB2z8", secilen_dil: "tr",odemeTuru: UserDefaults.standard.object(forKey: "odemeTip") as! String ,taksitId: UserDefaults.standard.object(forKey: "taksitId") as! String)
+        odemeSecenekler(urlString: WebService.odeme_secenekler)
+        JsonDatas(urlString: WebService.sepet_listele, anonimId: globals.anonim_id, secilen_dil: Dil.tr,odemeTuru: UserDefaults.standard.object(forKey: "odemeTip") as! String ,taksitId: UserDefaults.standard.object(forKey: "taksitId") as! String)
         barCustomize()
         sideMenus()
         stackHeight = hesaplarHeight.constant
@@ -91,7 +94,7 @@ class SepetimViewController: UIViewController,UITableViewDelegate,UITableViewDat
         for subview in self.scrollview.subviews{
             subview.removeFromSuperview()
         }
-        odemeTipiKontrol(urlString: "https://ortakfikir.com/eticaret/sistem/API/webservices/android_services/service_app_20102017_versionv4_php/sepet_listele.php", anonimId: "android_FIU2oGmaOAg1Ir188RIJdErb0tO9GEaLAJ5PYgp2etUDLNaHoVuKVmNrGru2nN27IFNVy8uClgoujIB2z8", secilen_dil: "tr",odemeTuru: taksit.taksitKod[checkBox.tag],taksitId: "0")
+        odemeTipiKontrol(urlString: WebService.sepet_listele, anonimId: globals.anonim_id, secilen_dil: Dil.tr,odemeTuru: taksit.taksitKod[checkBox.tag],taksitId: "0")
  
         
         if self.taksit.taksitKod[checkBox.tag] == "kredi_karti"
@@ -176,31 +179,55 @@ class SepetimViewController: UIViewController,UITableViewDelegate,UITableViewDat
             cell.azaltBtn.addTarget(self, action: #selector(self.incrementBtnClicked), for: .touchUpInside)
             cell.arttırBtn.tag = indexPath.row
             cell.arttırBtn.addTarget(self, action: #selector(self.decrementBtnClicked), for: .touchUpInside)
-            cell.sepetUrunAd.text=urunler.ubaslik[indexPath.row]+" - "+urunler.vbaslik[indexPath.row]
             cell.sepetResim.sd_setImage(with: URL(string: urunler.resim[indexPath.row]))
             cell.sepetUrunFiyat.text=urunler.fiyat[indexPath.row]+" TL"
             cell.iptalButton.layer.cornerRadius=cell.iptalButton.bounds.size.width / 2.0
             cell.clipsToBounds = true
             cell.selectionStyle = .none
-            cell.scrollViewSepet.delegate = self
-            cell.scrollViewSepet.contentSize.width = CGFloat(6*(Int(cell.scrollViewSepet.frame.size.width)/3))
+           /* cell.scrollViewSepet.delegate = self
+            cell.scrollViewSepet.contentSize.width = CGFloat(6*(Int(cell.scrollViewSepet.frame.size.width)/3))*/
+           setHTMLFromString(htmlText: baslikCıktısı[indexPath.row])
+           cell.ozellikler.attributedText = ozellikler
             
-            for i in 0..<urunler.varyantlarUrunHepsi[indexPath.row].count
+            
+           /* for i in 0..<urunler.varyantlarUrunHepsi[indexPath.row].count
             {
                 let frame = CGRect(x:i*Int(cell.scrollViewSepet.frame.size.width)/3, y:0, width: Int(cell.scrollViewSepet.frame.size.width)/3, height: 10 )
                 let label = UILabel(frame: frame)
+                label.numberOfLines = 0
+               
                 let frame2 = CGRect(x:i*Int(cell.scrollViewSepet.frame.size.width)/3, y:15, width: Int(cell.scrollViewSepet.frame.size.width)/3, height: 15 )
                 let label2 = UILabel(frame: frame2)
+                label2.numberOfLines = 0
+                
                 label.text=urunler.varyantlarUrunHepsi[indexPath.row][i]
                 label.textAlignment=NSTextAlignment.center
                 label.font = UIFont.boldSystemFont(ofSize: 12)
                 label2.text=urunler.secilenVeriHepsi[indexPath.row][i]
                 label2.font = label2.font.withSize(12)
                 label2.textAlignment=NSTextAlignment.center
+                 label2.sizeToFit()
+                 label.sizeToFit()
                 cell.scrollViewSepet.addSubview(label)
                 cell.scrollViewSepet.addSubview(label2)
                 cell.scrollViewSepet.contentSize.width = CGFloat((i*Int(cell.scrollViewSepet.frame.size.width)/3)+Int(cell.scrollViewSepet.frame.size.width)/3)
-            }
+                labelUzunluk.append(label2.frame.size.height)
+                
+                for i in 0..<labelUzunluk.count
+                {
+                    for j in 0..<labelUzunluk.count
+                    {
+                        if labelUzunluk[i] > labelUzunluk[j]
+                        {
+                            tut = labelUzunluk[i]
+                            labelUzunluk[i] = labelUzunluk[j]
+                            labelUzunluk[j]=tut
+                        }
+                    }
+                }
+                 cell.scrollViewSepet.contentSize.height = CGFloat(labelUzunluk[0]+label.frame.size.height)
+                
+            }*/
             return cell
         
        
@@ -281,7 +308,7 @@ class SepetimViewController: UIViewController,UITableViewDelegate,UITableViewDat
             UserDefaults.standard.removeObject(forKey: "taksitId")
              globals.taksitId = taksit.taksitId[indexPath.row]
             UserDefaults.standard.set(globals.taksitId,forKey:"taksitId")
-            odemeTipiKontrol(urlString: "https://ortakfikir.com/eticaret/sistem/API/webservices/android_services/service_app_20102017_versionv4_php/sepet_listele.php", anonimId: "android_FIU2oGmaOAg1Ir188RIJdErb0tO9GEaLAJ5PYgp2etUDLNaHoVuKVmNrGru2nN27IFNVy8uClgoujIB2z8", secilen_dil: "tr",odemeTuru: UserDefaults.standard.object(forKey: "odemeTip") as! String,taksitId: taksit.taksitId[indexPath.row])
+            odemeTipiKontrol(urlString: WebService.sepet_listele, anonimId: globals.anonim_id, secilen_dil: Dil.tr,odemeTuru: UserDefaults.standard.object(forKey: "odemeTip") as! String,taksitId: taksit.taksitId[indexPath.row])
             
          
         }
@@ -297,7 +324,7 @@ class SepetimViewController: UIViewController,UITableViewDelegate,UITableViewDat
             UserDefaults.standard.removeObject(forKey: "odemeTip")
             globals.odeme_secenek = self.taksit.taksitKod[indexPath.row]
             UserDefaults.standard.set(globals.odeme_secenek,forKey:"odemeTip")
-              odemeTipiKontrol(urlString: "https://ortakfikir.com/eticaret/sistem/API/webservices/android_services/service_app_20102017_versionv4_php/sepet_listele.php", anonimId: "android_FIU2oGmaOAg1Ir188RIJdErb0tO9GEaLAJ5PYgp2etUDLNaHoVuKVmNrGru2nN27IFNVy8uClgoujIB2z8", secilen_dil: "tr",odemeTuru: taksit.taksitKod[indexPath.row],taksitId: UserDefaults.standard.object(forKey: "taksitId") as! String)
+              odemeTipiKontrol(urlString: WebService.sepet_listele, anonimId: globals.anonim_id, secilen_dil: Dil.tr,odemeTuru: taksit.taksitKod[indexPath.row],taksitId: UserDefaults.standard.object(forKey: "taksitId") as! String)
             
             if self.taksit.taksitKod[indexPath.row] == "kredi_karti"
             {
@@ -446,6 +473,7 @@ class SepetimViewController: UIViewController,UITableViewDelegate,UITableViewDat
                 do
                 {
                     let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? NSDictionary
+                    print(json!)
                     if let tutar = json!["toplam_tutar"] as? String
                     {
                         self.fiyatBilgileri.toplamTutar=tutar
@@ -495,6 +523,11 @@ class SepetimViewController: UIViewController,UITableViewDelegate,UITableViewDat
                                 if let maksAdet = jsonVeri["maks_adet"] as? String
                                 {
                                     self.urunler.maksAdet.append(maksAdet)
+                                    
+                                }
+                                if let baslikCikti = jsonVeri["baslik_ciktisi"] as? String
+                                {
+                                    self.baslikCıktısı.append(baslikCikti)
                                     
                                 }
                              
@@ -803,7 +836,14 @@ class SepetimViewController: UIViewController,UITableViewDelegate,UITableViewDat
         self.sepetimTableview.reloadData()
         }
     }
-    
+    func setHTMLFromString(htmlText: String) {
+        let modifiedFont = NSString(format:"<span style=\"font-family: '-apple-system', 'HelveticaNeue'; font-size: \(12)\">%@</span>" as NSString, htmlText) as String
+        let attrStr = try! NSAttributedString(
+            data: modifiedFont.data(using: .unicode, allowLossyConversion: true)!,
+            options: [NSAttributedString.DocumentReadingOptionKey.documentType:NSAttributedString.DocumentType.html, NSAttributedString.DocumentReadingOptionKey.characterEncoding: String.Encoding.utf8.rawValue],
+            documentAttributes: nil)
+        self.ozellikler = attrStr
+    }
     
     
     

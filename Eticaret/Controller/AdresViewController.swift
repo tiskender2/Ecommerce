@@ -214,7 +214,7 @@ class AdresViewController: UIViewController,BEMCheckBoxDelegate,UIPickerViewDele
     }
     @IBAction func ilClick(_ sender: Any) {
         kontrol = 1
-        ilListele(urlString: "https://ortakfikir.com/eticaret/sistem/API/webservices/android_services/service_app_20102017_versionv4_php/il_listesi.php")
+        ilListele(urlString:WebService.il_listesi)
         popUpPicker()
         /*if let viewWithTag = self.view.viewWithTag(1) {
             viewWithTag.removeFromSuperview()
@@ -226,7 +226,7 @@ class AdresViewController: UIViewController,BEMCheckBoxDelegate,UIPickerViewDele
         if ilButton.currentTitle! != "-İl Seç-"
         {
             kontrol = 2
-            ilçeListele(urlString:"https://ortakfikir.com/eticaret/sistem/API/webservices/android_services/service_app_20102017_versionv4_php/ilce_listesi.php",ilid:ilId)
+            ilçeListele(urlString:WebService.ilce_listesi,ilid:ilId)
             
             popUpPicker()
         }
@@ -244,7 +244,7 @@ class AdresViewController: UIViewController,BEMCheckBoxDelegate,UIPickerViewDele
     @IBAction func filClick(_ sender: Any) {
         
             kontrol = 3
-            ilListele(urlString: "https://ortakfikir.com/eticaret/sistem/API/webservices/android_services/service_app_20102017_versionv4_php/il_listesi.php")
+            ilListele(urlString: WebService.il_listesi)
             popUpPicker()
         
     }
@@ -253,7 +253,7 @@ class AdresViewController: UIViewController,BEMCheckBoxDelegate,UIPickerViewDele
         if filText.currentTitle! != "-İl Seç-"
         {
             kontrol = 4
-            ilçeListele(urlString:"https://ortakfikir.com/eticaret/sistem/API/webservices/android_services/service_app_20102017_versionv4_php/ilce_listesi.php",ilid:ilId)
+            ilçeListele(urlString:WebService.ilce_listesi,ilid:ilId)
             
             popUpPicker()
         }

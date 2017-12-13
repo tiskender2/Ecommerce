@@ -12,6 +12,7 @@ struct globals {
    static var dil = "tr"
    static var odeme_secenek = ""
    static var taksitId="0"
+   static var anonim_id = ""
 }
 class ViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
     
@@ -28,16 +29,16 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     var iFiyat=[String]()
     var fiyat=[String]()
     var stokKodu=[String]()
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
         sideMenus()
         Timer.scheduledTimer(timeInterval: 4.0, target: self, selector: #selector(self.scrollAutomatically), userInfo: nil, repeats: true)
         if UserDefaults.standard.object(forKey: "odemeTip")  == nil
         {
             
-            globalVariable(urlString: "https://ortakfikir.com/eticaret/sistem/API/webservices/android_services/service_app_20102017_versionv4_php/odeme_turleri.php")
+            globalVariable(urlString: WebService.odeme_tur)
         }
         else
         {
@@ -45,6 +46,16 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
             globals.taksitId = UserDefaults.standard.object(forKey: "taksitId") as! String
             
         }
+        if UserDefaults.standard.object(forKey: "anonimId") == nil
+        {
+            anonimId(urlString: WebService.anonim_id)
+        }
+        else
+        {
+            globals.anonim_id = UserDefaults.standard.object(forKey: "anonimId") as! String
+            
+        }
+        
     
     }
 
@@ -82,8 +93,8 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
             
         }
-        sliderResim(urlString: "https://ortakfikir.com/eticaret/sistem/API/webservices/android_services/service_app_20102017_versionv4_php/anasayfa_slider.php")
-        onerilenUrunler(urlString:"https://ortakfikir.com/eticaret/sistem/API/webservices/android_services/service_app_20102017_versionv4_php/anasayfa_onerilen_urunler.php")
+        sliderResim(urlString: WebService.anasayfa_slider)
+        onerilenUrunler(urlString: WebService.anasayfa_onerilen_urunler,dil: Dil.tr)
         
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -179,12 +190,12 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         task.resume()
         
     }
-    func onerilenUrunler(urlString:String)
+    func onerilenUrunler(urlString:String,dil:String)
     {
         let urlRequest = URL(string: urlString)
         var request = URLRequest(url: urlRequest! as URL)
         request.httpMethod = "POST"
-        let parameters = "secilen_dil="+"tr"
+        let parameters = "secilen_dil="+dil
         request.httpBody = parameters.data(using: String.Encoding.utf8)
         let task = URLSession.shared.dataTask(with: request as URLRequest) { (data, response, error) in
             
@@ -291,11 +302,36 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         task.resume()
         
     }
+    func anonimId(urlString:String)
+    {
+        let urlRequest = URL(string: urlString)
+        var request = URLRequest(url: urlRequest! as URL)
+        request.httpMethod = "POST"
+        let task = URLSession.shared.dataTask(with: request as URLRequest) { (data, response, error) in
+            
+            if error != nil
+            {
+                print(error!)
+            }
+            else
+            {
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as! NSDictionary
+                    globals.anonim_id = (json["id"] as? String)!
+                    UserDefaults.standard.set(globals.anonim_id,forKey:"anonimId")
+                    print(globals.anonim_id)
+                    
+                }
+                catch
+                {
+                    print(error)
+                }
+            }
+            
+        }
+        task.resume()
+        
+    }
    
-    
-  
-    
-
-
 
 }

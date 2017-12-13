@@ -48,7 +48,7 @@ class GirisViewController: UIViewController {
     }
     
     @IBAction func girisBtnAction(_ sender: Any) {
-        girisJson(urlString: "https://ortakfikir.com/eticaret/sistem/API/webservices/android_services/service_app_20102017_versionv4_php/giris_yap.php", ePosta: eposta.text!, Sifre: sifre.text!)
+        girisJson(urlString: WebService.giris_yap, ePosta: eposta.text!, Sifre: sifre.text!)
     }
     func girisJson(urlString:String,ePosta:String,Sifre:String)
     {

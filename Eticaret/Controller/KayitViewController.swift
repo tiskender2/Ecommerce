@@ -134,7 +134,7 @@ class KayitViewController: UIViewController,BEMCheckBoxDelegate{
     @IBAction func kayitOlBtn(_ sender: Any)
     {
         
-        kayitolJson(urlString: "https://ortakfikir.com/eticaret/sistem/API/webservices/android_services/service_app_20102017_versionv4_php/kayit_ol.php", isim: isimText.text!, soyisim:soyisimText.text! , ePosta: ePostaText.text!, Telefon: telefonText.text!, dTarihi: dogumTarihiText.text!, Cinsiyet: cinsiyet, Sifre: sifreText.text!)
+        kayitolJson(urlString:WebService.kayit_ol , isim: isimText.text!, soyisim:soyisimText.text! , ePosta: ePostaText.text!, Telefon: telefonText.text!, dTarihi: dogumTarihiText.text!, Cinsiyet: cinsiyet, Sifre: sifreText.text!)
        
     }
     func kayitolJson(urlString:String,isim:String,soyisim:String,ePosta:String,Telefon:String,dTarihi:String,Cinsiyet:String,Sifre:String)
